@@ -15,25 +15,38 @@ constructor(props){
 
 removeMatches(amount){
   var i = 0;
+  var j=0;
   var radio= document.getElementsByName("level");
   for (i=0;i<4;i++){
     if (radio[i].checked){
       var radion=i
-      if (document.getElementById("level-"+radion+"").children.length>=amount){      
-        for (i=0;i<(amount); i++){
+      if (document.getElementById("level-"+radion+"").children.length>=amount){     
+        for (j=0;j<(amount); j++){
           var level= document.getElementById("level-"+radion+"")
-          level.removeChild(level.firstChild);} 
+          level.removeChild(level.firstChild)
+          ;}
+          }
+      }
+      }
+  this.setState({
+    currentplayer: 3 - this.state.currentplayer
+    },() => { 
+      alert(this.state.currentplayer)
+      if(this.state.currentplayer=1){
         this.setState({
-          currentplayer: 3 - this.state.currentplayer,
-        })
-        alert(this.state.currentplayer)
-      }
-      else{
-        alert("You couldn't take so much matches from this ryad!!!");
-      }
-      }
+          string1:"Your Turn!!!",
+          string2:""
+            })
+            }
+      if(this.state.currentplayer=2){
+        this.setState({
+          string1:"",
+          string2:"Your Turn!!!"
+            })
+          }
+        } )
     }
-  }
+
 
 
 
