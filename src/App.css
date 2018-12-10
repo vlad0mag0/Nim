@@ -1,0 +1,92 @@
+#page{
+    background: url("./background.jpg");
+    width:1350px;
+    height:768px;
+    color:white;
+}
+
+#Player1{
+  width:200px;
+  font-size:30px;
+  background-color: black;
+  border-radius:10px;
+  margin-top: 5px;
+  margin-left: 15px;
+  height: 500px !important;
+}
+
+#Player2{
+  width:200px;
+  font-size:30px;
+  background-color: black;
+  margin-right:15px;
+  border-radius:10px;
+  margin-top: 5px;
+  text-align: center;
+  height: 500px !important;
+}
+
+#titlePlayer1{
+  display: block;
+  margin-bottom:40px;
+  margin-top:5px;
+}
+
+#titlePlayer2{
+   display: block;
+   margin-bottom:40px;
+   margin-top:5px;
+}
+
+.width{
+  width:150px;
+}
+
+.mdl-button{
+  margin-top: 10px;
+}
+
+#main{
+  display:flex;
+  width:100%;
+  justify-content:  space-between;
+}
+
+#main > div {
+  height:135px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#main > #matches > div{
+  height:135px;
+}
+
+#main > #matches > div > img{
+  margin-left:20px;
+}
+
+#mathes{
+  width:420px;
+  height:540px;
+} 
+
+#radio{
+  width:20px; 
+  height:50px;
+  margin-right:40px;
+}
+
+#radio > input {
+  height: 139px;
+}
+
+.color{
+  background-color: #1814E1 !important;
+}
+
+.footer{
+  width:180px;
+  height:20px;
+  margin:270px auto 0 auto;
+}
