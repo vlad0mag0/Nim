@@ -33,10 +33,10 @@ class Matches extends Component {
               <img src={match} id="3-5"/>
               <img src={match} id="3-6"/>
             </div>
-        </div>
-			)
+            </div>
+      )
 	}
 }
 
 
-export default Matсhes;
+export default Matches;
