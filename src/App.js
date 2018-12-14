@@ -51,7 +51,7 @@ removeMatches(amount){
           var level= document.getElementById("level-"+radion+"")
           level.removeChild(level.firstChild)
           ;}
-      var next=this.props.check
+      var next=this.checking()
       if (next===true){
         this.setState({
     currentplayer: 3 - this.state.currentplayer
@@ -108,10 +108,10 @@ removeMatches(amount){
           <span id="winner">The player with number {this.state.winner} is winner</span>
         </div>
         <div id="main">
-          <Player1 onclick={this.removeMatches} string={this.state.string1} check={this.checking}/>
+          <Player1 onclick={this.removeMatches} string={this.state.string1} />
           <Matches />       
           <Radio />
-          <Player2 onclick={this.removeMatches} string={this.state.string2} check={this.checking}/>
+          <Player2 onclick={this.removeMatches} string={this.state.string2}/>
         </div>
       </div>
     );
