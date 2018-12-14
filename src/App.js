@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Matches from "./matches.js"
+import Matches from "./matches"
 
 class App extends Component {
 constructor(props){

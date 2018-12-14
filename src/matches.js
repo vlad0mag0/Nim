@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import match from "./match.png"
 
-class Matches extends Component{
+class Matches extends Component {
+  constructor(props){
+  super(props)
+  }
+
 	render(){
 		return(
         <div id="matches">
